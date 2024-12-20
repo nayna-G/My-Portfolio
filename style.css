@@ -15,13 +15,13 @@ body {
 
 /* Links */
 a {
-    color: #0077cc; 
+    color: #0077cc; /* Blue color for links */
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #ff9800; 
+    color: #ff9800; /* Hover effect: Change to a bright orange */
 }
 
 /* Header */
@@ -30,14 +30,14 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background: #111; 
+    background: #111; /* Dark background */
     color: white;
     padding: 20px 0;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     z-index: 999;
     text-align: center;
-    font-size: 2rem; 
-    font-weight: 700; 
+    font-size: 2rem; /* Increased font size for readability */
+    font-weight: 700; /* Bold header text */
     letter-spacing: 1px;
 }
 
@@ -66,7 +66,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ff9800; 
+    color: #ff9800; /* Highlight color on hover */
 }
 
 /* Section Styles */
@@ -74,7 +74,7 @@ section {
     max-width: 1200px;
     margin: 100px auto;
     padding: 60px 20px;
-    background: #fff;
+    background: #fff; /* White background */
     border-radius: 10px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -96,7 +96,7 @@ h2 {
 
 /* About Me Section */
 #about {
-    background: #fafafa; 
+    background: #fafafa; /* Light gray background */
     padding: 60px 20px;
     text-align: center;
     border-radius: 8px;
@@ -109,6 +109,7 @@ h2 {
     max-width: 900px;
     margin: auto;
 }
+
 /* Projects Section */
 #projects {
     background-color: #fff;
@@ -175,7 +176,7 @@ h2 {
 
 /* Education Section */
 #education {
-    background-color: #f4f7fa; 
+    background-color: #f4f7fa; /* Light background for contrast */
     padding: 60px 20px;
     text-align: center;
     border-radius: 10px;
@@ -197,8 +198,7 @@ h2 {
     padding: 0;
     margin-top: 40px;
     position: relative;
-    display: inline-block; 
-    text-align: left; 
+}
 
 .timeline:before {
     content: '';
@@ -207,7 +207,7 @@ h2 {
     left: 50%;
     width: 2px;
     height: 100%;
-    background: #ff9800; 
+    background: #ff9800; /* Orange accent color for the line */
     transform: translateX(-50%);
 }
 
@@ -221,7 +221,7 @@ h2 {
     font-size: 1.2rem;
     max-width: 650px;
     margin-left: auto;
-    margin-right: auto; 
+    margin-right: auto;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -245,7 +245,7 @@ h2 {
 .timeline li .degree {
     font-weight: 600;
     font-size: 1.5rem;
-    color: #0077cc;
+    color: #0077cc; /* Blue for the degree name */
     margin-bottom: 10px;
 }
 
@@ -282,34 +282,33 @@ h2 {
 }
 
 
-
 /* Contact Section */
 #contact {
-    background-color: #f9f9f9;  
-    padding: 60px 20px;  
+    background-color: #f9f9f9;  /* Lighter background for a soft, minimalistic look */
+    padding: 60px 20px;  /* Slightly more padding for a spacious feel */
     text-align: center;
-    border-radius: 10px; 
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);  
-    max-width: 600px; 
-    margin: 0 auto; 
+    border-radius: 10px;  /* Softer rounded corners */
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);  /* Lighter shadow for a refined look */
+    max-width: 600px;  /* Limits the width for a clean, centered section */
+    margin: 0 auto;  /* Centers the contact section */
 }
 
 #contact p {
-    font-size: 1rem; 
-    color: #666;  
-    line-height: 1.6; 
+    font-size: 1rem;  /* Smaller, more subtle text */
+    color: #666;  /* Slightly lighter gray for softer contrast */
+    line-height: 1.6;  /* Improved line spacing for better readability */
 }
 
 #contact a {
-    font-size: 1.1rem;  
-    font-weight: 500; 
+    font-size: 1.1rem;  /* Slightly smaller font size */
+    font-weight: 500;  /* Lighter font weight for a clean, minimalistic feel */
     color: #0077cc;
-    transition: color 0.3s ease, transform 0.3s ease;  
+    transition: color 0.3s ease, transform 0.3s ease;  /* Added subtle transform on hover */
 }
 
 #contact a:hover {
     color: #005fa3;
-    transform: translateY(-2px);  
+    transform: translateY(-2px);  /* Adds a light hover effect */
 }
 
 
@@ -327,6 +326,7 @@ footer p {
     margin: 0;
 }
 
+/* Responsive Design */
 @media (max-width: 768px) {
     header h1 {
         font-size: 2rem;
