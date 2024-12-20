@@ -1,13 +1,13 @@
 //alert 
 alert("Welcome!");  
 
-// Add background color change feature
+// background color change
 function changeBackground() {
     document.body.style.transition = "background 0.5s ease";  // Smooth transition for background change
     document.body.style.background = "linear-gradient(to right,rgb(219, 228, 138),rgb(231, 212, 236))";  // Softer gradient tones
 }
 
-// Add button dynamically
+// Add button
 const aboutSection = document.getElementById('about');
 const button = document.createElement('button');
 button.textContent = "Change Background";
@@ -26,7 +26,7 @@ button.style.cssText = `
 
 button.onclick = changeBackground;
 
-// Button hover effect
+// Button hovering
 button.onmouseover = function() {
     button.style.backgroundColor = "#005fa3";
     button.style.transform = "scale(1.05)";
