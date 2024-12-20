@@ -1,5 +1,5 @@
-// Welcome alert (more subtle)
-alert("Welcome!");  // "Adios Amigos!" might be too abrupt for a user experience.
+//alert 
+alert("Welcome!");  
 
 // Add background color change feature
 function changeBackground() {
