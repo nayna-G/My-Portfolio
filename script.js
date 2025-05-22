@@ -1,13 +1,12 @@
-//alert 
-alert("Welcome!");  
 
-// background color change
+alert("Welcome!");  
+// used a function to change background
 function changeBackground() {
-    document.body.style.transition = "background 0.5s ease";  // Smooth transition for background change
+    document.body.style.transition = "background 0.5s ease";  //its for moreee smoother transition in case i forget
     document.body.style.background = "linear-gradient(to right,rgb(219, 228, 138),rgb(231, 212, 236))";  // Softer gradient tones
 }
 
-// Add button
+// now we'll add buttons
 const aboutSection = document.getElementById('about');
 const button = document.createElement('button');
 button.textContent = "Change Background";
@@ -26,7 +25,7 @@ button.style.cssText = `
 
 button.onclick = changeBackground;
 
-// Button hovering
+// for hovering effect on the button
 button.onmouseover = function() {
     button.style.backgroundColor = "#005fa3";
     button.style.transform = "scale(1.05)";
@@ -38,5 +37,5 @@ button.onmouseout = function() {
 
 aboutSection.appendChild(button);
 
-// Console log for testing
+//testing
 console.log("Portfolio loaded successfully!");
