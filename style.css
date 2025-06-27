@@ -103,6 +103,80 @@ h2 {
   max-width: 900px;
   margin: auto;
 }
+/* Existing styles remain unchanged above */
+
+/* Experience Section - Styled like Projects */
+.experience-card {
+  background-color: #fafafa;
+  padding: 30px;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: inline-block;
+  max-width: 750px;
+  text-align: left;
+}
+
+.experience-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.experience-card h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 2px solid #ff9800;
+  padding-bottom: 8px;
+}
+
+.experience-card h4 {
+  font-size: 1.2rem;
+  color: #0077cc;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.experience-card .duration {
+  font-size: 0.95rem;
+  font-weight: normal;
+  color: #777;
+}
+
+.experience-card ul {
+  padding-left: 20px;
+  list-style-type: disc;
+  color: #555;
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+.experience-card ul li {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .experience-card {
+    max-width: 100%;
+    margin: 15px;
+  }
+
+  .experience-card h3 {
+    font-size: 1.6rem;
+  }
+
+  .experience-card h4 {
+    font-size: 1.05rem;
+  }
+
+  .experience-card ul li {
+    font-size: 0.95rem;
+  }
+}
 
 /* Projects Section */
 #projects {
