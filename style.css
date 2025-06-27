@@ -10,6 +10,7 @@ body {
   color: #333;
   line-height: 1.6;
   padding-top: 60px;
+  transition: background 0.5s ease;
 }
 
 a {
@@ -38,10 +39,6 @@ header {
   letter-spacing: 1px;
 }
 
-header h1 {
-  letter-spacing: 2px;
-}
-
 nav ul {
   list-style: none;
   display: flex;
@@ -59,7 +56,6 @@ nav ul li a {
   text-transform: uppercase;
   font-weight: 500;
   letter-spacing: 1px;
-  transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
@@ -89,11 +85,10 @@ h2 {
   text-transform: uppercase;
 }
 
+/* About Section */
 #about {
   background: #fafafa;
-  padding: 60px 20px;
   text-align: center;
-  border-radius: 8px;
 }
 
 #about p {
@@ -103,8 +98,15 @@ h2 {
   max-width: 900px;
   margin: auto;
 }
-.experience-card {
+
+/* Experience Section */
+#experience {
   background-color: #fafafa;
+  text-align: center;
+}
+
+.experience-card {
+  background-color: white;
   padding: 30px;
   margin: 20px auto;
   border-radius: 10px;
@@ -126,7 +128,6 @@ h2 {
   color: #333;
   margin-bottom: 5px;
   text-transform: uppercase;
-  letter-spacing: 1px;
   border-bottom: 2px solid #ff9800;
   padding-bottom: 8px;
 }
@@ -140,26 +141,18 @@ h2 {
 
 .experience-card .duration {
   font-size: 0.95rem;
-  font-weight: normal;
   color: #777;
 }
 
 .experience-card ul {
   padding-left: 20px;
-  list-style-type: disc;
   color: #555;
   line-height: 1.8;
-  font-size: 1rem;
 }
 
-.experience-card ul li {
-  margin-bottom: 10px;
-}
-
-/* Projects Section */
+/* Projects */
 #projects {
   background-color: #fff;
-  padding: 60px 0;
   text-align: center;
 }
 
@@ -173,8 +166,6 @@ h2 {
   display: inline-block;
   max-width: 350px;
   text-align: left;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .project:hover {
@@ -187,60 +178,31 @@ h2 {
   font-weight: 600;
   color: #333;
   margin-bottom: 15px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.project p {
-  font-size: 1.1rem;
-  color: #555;
-  line-height: 1.6;
-  margin-bottom: 20px;
-}
-
-.project h3 {
   border-bottom: 2px solid #ff9800;
   padding-bottom: 10px;
-  margin-bottom: 15px;
 }
 
 .project:hover h3 {
   color: #ff9800;
 }
 
-/* Mobile adjustments */
-@media (max-width: 768px) {
-  .project {
-    max-width: 100%;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
+.project p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
 }
 
-/* Education Section */
+/* Education */
 #education {
-  background-color: #f4f7fa; /* Light background for contrast */
-  padding: 60px 20px;
+  background-color: #f4f7fa;
   text-align: center;
-  border-radius: 10px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  position: relative;
-}
-
-h2 {
-  font-size: 2.5rem;
-  font-weight: 600;
-  margin-bottom: 40px;
-  color: #333;
-  text-transform: uppercase;
-  letter-spacing: 1px;
 }
 
 .timeline {
   list-style: none;
-  padding: 0;
   margin-top: 40px;
   position: relative;
+  padding: 0;
 }
 
 .timeline:before {
@@ -250,7 +212,7 @@ h2 {
   left: 50%;
   width: 2px;
   height: 100%;
-  background: #ff9800; /* Orange accent color for the line */
+  background: #ff9800;
   transform: translateX(-50%);
 }
 
@@ -260,17 +222,9 @@ h2 {
   margin: 30px 0;
   border-radius: 8px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  position: relative;
-  font-size: 1.2rem;
   max-width: 650px;
   margin-left: auto;
   margin-right: auto;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.timeline li:hover {
-  transform: translateX(10px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
 }
 
 .timeline li::before {
@@ -288,8 +242,7 @@ h2 {
 .timeline li .degree {
   font-weight: 600;
   font-size: 1.5rem;
-  color: #0077cc; /* Blue for the degree name */
-  margin-bottom: 10px;
+  color: #0077cc;
 }
 
 .timeline li .institution {
@@ -304,53 +257,31 @@ h2 {
   margin-top: 15px;
 }
 
-/* Mobile adjustments */
-@media (max-width: 768px) {
-  .timeline li {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-
-  .timeline li .degree {
-    font-size: 1.4rem;
-  }
-
-  .timeline li .institution {
-    font-size: 1rem;
-  }
-
-  .timeline li .duration {
-    font-size: 0.9rem;
-  }
-}
-
-/* Contact Section */
+/* Contact */
 #contact {
-  background-color: #f9f9f9; /* Lighter background for a soft, minimalistic look */
-  padding: 60px 20px; /* Slightly more padding for a spacious feel */
+  background-color: #f9f9f9;
   text-align: center;
-  border-radius: 10px; /* Softer rounded corners */
-  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1); /* Lighter shadow for a refined look */
-  max-width: 600px; /* Limits the width for a clean, centered section */
-  margin: 0 auto; /* Centers the contact section */
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 #contact p {
-  font-size: 1rem; /* Smaller, more subtle text */
-  color: #666; /* Slightly lighter gray for softer contrast */
-  line-height: 1.6; /* Improved line spacing for better readability */
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
 }
 
 #contact a {
-  font-size: 1.1rem; /* Slightly smaller font size */
-  font-weight: 500; /* Lighter font weight for a clean, minimalistic feel */
+  font-size: 1.1rem;
+  font-weight: 500;
   color: #0077cc;
-  transition: color 0.3s ease, transform 0.3s ease; /* Added subtle transform on hover */
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
 #contact a:hover {
   color: #005fa3;
-  transform: translateY(-2px); /* Adds a light hover effect */
+  transform: translateY(-2px);
 }
 
 /* Footer */
@@ -360,42 +291,4 @@ footer {
   text-align: center;
   padding: 15px 0;
   margin-top: 30px;
-}
-
-footer p {
-  font-size: 1rem;
-  margin: 0;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  header h1 {
-    font-size: 2rem;
-  }
-
-  nav ul {
-    flex-direction: column;
-    margin-top: 15px;
-  }
-
-  nav ul li {
-    margin: 10px 0;
-  }
-
-  section {
-    margin: 40px 20px;
-  }
-
-  .project {
-    margin: 10px 0;
-    width: 100%;
-  }
-
-  .timeline li {
-    font-size: 1rem;
-  }
-
-  footer p {
-    font-size: 0.9rem;
-  }
 }
