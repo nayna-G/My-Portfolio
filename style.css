@@ -103,9 +103,6 @@ h2 {
   max-width: 900px;
   margin: auto;
 }
-/* Existing styles remain unchanged above */
-
-/* Experience Section - Styled like Projects */
 .experience-card {
   background-color: #fafafa;
   padding: 30px;
@@ -157,25 +154,6 @@ h2 {
 
 .experience-card ul li {
   margin-bottom: 10px;
-}
-
-@media (max-width: 768px) {
-  .experience-card {
-    max-width: 100%;
-    margin: 15px;
-  }
-
-  .experience-card h3 {
-    font-size: 1.6rem;
-  }
-
-  .experience-card h4 {
-    font-size: 1.05rem;
-  }
-
-  .experience-card ul li {
-    font-size: 0.95rem;
-  }
 }
 
 /* Projects Section */
